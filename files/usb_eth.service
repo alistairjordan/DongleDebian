@@ -1,0 +1,10 @@
+[Unit]
+Description=USB_ETH service.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usb_eth.sh
+
+[Install]
+WantedBy=multi-user.target
+
