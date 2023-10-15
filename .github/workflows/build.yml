@@ -4,7 +4,7 @@ on: [push, pull_request]
 jobs:
   build:
     name: GetLinuxRelease
-    runs-on: debian/latest
+    runs-on: ubuntu-latest
     steps:
       - id: getlinuxrelease
         uses: pozetroninc/github-action-get-latest-release@master
