@@ -6,6 +6,9 @@
 * Using predefined .config for linux kernel
 
 # Starting Steps
+
+For running on a local machine, run the following in the terminal.
+
 ```
 # Init Submodules (For the linux src)
 git submodule init
@@ -15,3 +18,5 @@ sudo apt install binfmt-support qemu-user-static
 # Build/Run Docker Image
 ./scripts/docker_brun.sh
 ```
+
+The rootfs.img and boot.img will be created in the checkout directory.
