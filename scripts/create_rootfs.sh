@@ -1,3 +1,5 @@
+set -e
+
 DEBIAN_DIR="debian"
 
 dd if=/dev/zero of=root.img bs=1024k seek=3144 count=0

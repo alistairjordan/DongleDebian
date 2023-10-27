@@ -1,3 +1,5 @@
+set -e
+
 DEBIAN_DIR="debian"
 LINUX_PACKAGE=$(cat linux/debian/linux-image/DEBIAN/control | grep "Package: " | sed "s/Package: //")
 LINUX_VERSION=$(cat linux/debian/linux-image/DEBIAN/control | grep "Version: " | sed "s/Version: //")
@@ -34,8 +36,8 @@ rm -rf ./${DEBIAN_DIR}/linux_deb
 cp -r firmware/* ${DEBIAN_DIR}/lib/firmware
 
 # If needed, add WIFI connection
-cp ../wifi.nmconnection ./${DEBIAN_DIR}/etc/NetworkManager/system-connections
-chmod 600 ./${DEBIAN_DIR}/etc/NetworkManager/system-connections/wifi.nmconnection
+#cp ../wifi.nmconnection ./${DEBIAN_DIR}/etc/NetworkManager/system-connections
+#chmod 600 ./${DEBIAN_DIR}/etc/NetworkManager/system-connections/wifi.nmconnection
 
 # Copy out the SSH private key
 cp ${DEBIAN_DIR}/root/.ssh/id_rsa ./private.key

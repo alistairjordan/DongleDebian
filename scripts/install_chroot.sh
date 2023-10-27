@@ -1,3 +1,5 @@
+set -e
+
 apt install -y vim initramfs-tools # This needs to be done for the install initrd generation of the kernel install
 dpkg -i $(cat linux_deb)
 apt install -y openssh-server

@@ -1,3 +1,5 @@
+set -e
+
 # Install binfmt-support
 sudo apt install -y binfmt-support qemu-user-static
 
@@ -17,6 +19,10 @@ echo \
 sudo apt-get update
 
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# Do submodule checkout
+git submodule init
+git submodule update --depth=1
 
 
 

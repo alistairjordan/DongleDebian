@@ -1,3 +1,5 @@
+set -e
+
 export CROSS_COMPILE=aarch64-linux-gnu-
 export ARCH=arm64
 pushd linux

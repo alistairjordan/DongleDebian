@@ -1,3 +1,5 @@
+set -e
+
 case ${1} in
 	"clean")
 		./scripts/clean_linux.sh
