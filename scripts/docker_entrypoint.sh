@@ -11,6 +11,7 @@ case ${1} in
 		./scripts/build_linux.sh
 		./scripts/create_debian.sh
 		./scripts/create_boot.sh
+		./scripts/create_edl.sh
 		;;
 	*)
 		echo "Select option 'build' or 'clean'"
