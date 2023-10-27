@@ -19,7 +19,7 @@ jobs:
         release_name: Release ${{ github.sha }}
         body: |
           Contents of this release:
-          * boot.img - boot Image
+          * boot.img - Boot Image
           * root.img - Non Sparse Image
           * rootfs.img - Sparse Image
         draft: false
