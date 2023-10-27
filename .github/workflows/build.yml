@@ -34,16 +34,17 @@ jobs:
         asset_path: ./boot.img
         asset_name: boot.img
         asset_content_type: application/img
-    - name: Upload Release Asset root.img
-      id: upload-release-asset-debian-root
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./root.img
-        asset_name: root.img
-        asset_content_type: application/img
+    # BIGGER THAN 2G!
+    # - name: Upload Release Asset root.img
+    #   id: upload-release-asset-debian-root
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+    #     asset_path: ./root.img
+    #     asset_name: root.img
+    #     asset_content_type: application/img
     - name: Upload Release Asset rootfs.img
       id: upload-release-asset-debian-rootfs
       uses: actions/upload-release-asset@v1
