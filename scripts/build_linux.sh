@@ -3,5 +3,5 @@ export ARCH=arm64
 pushd linux
 make msm8916_defconfig
 make -j`nproc`
-make -j`nproc` deb-pkg
+make -j`nproc` bindeb-pkg
 popd

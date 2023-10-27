@@ -1,0 +1,6 @@
+debian/*
+*.deb
+*.img
+*.buildinfo
+*.changes
+*.key
