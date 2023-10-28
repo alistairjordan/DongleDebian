@@ -2,10 +2,11 @@
 
 This directory contains the files required to create an EDL Deployment.
 
-Much like the bootloader directory, this is a "Done once" kinda thing, as all the devices require the same partitions, have the same amount of EMMC etc. Therefore the process would remain static accross builds.
+Much like the bootloader directory, this is a "done once" kinda thing, as all the devices require the same partitions, have the same amount of EMMC etc. Therefore the process would remain static accross builds.
 
 # IMPORTANT
-MAKE SURE YOU BACKUP BEFORE DEPLOYING. THE GPT is Guesswork based on my own device. 
+*MAKE SURE YOU BACKUP BEFORE DEPLOYING.*
+THE GPT is guesswork based on my own device. 
 
 ## Deployment Process
 
