@@ -8,7 +8,7 @@ jobs:
     - name: Prepare build environment
       run: ./scripts/prepare_runner.sh
     - name: Build
-      run: ./scripts/docker_brun.sh
+      run: ./scripts/docker_brun.sh UFI1962
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1

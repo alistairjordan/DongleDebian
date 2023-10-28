@@ -5,7 +5,7 @@ case ${1} in
 		./scripts/clean_all.sh
 		;;
 	"build")
-		./scripts/build_all.sh
+		./scripts/build_all.sh ${2}
 		;;
 	*)
 		echo "Select option 'build' or 'clean'"

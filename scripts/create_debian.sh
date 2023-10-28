@@ -33,7 +33,7 @@ rm -rf ./${DEBIAN_DIR}/linux_deb
 #cp edl/modem/image/* ${DEBIAN_DIR}/lib/firmware/
 #umount edl/modem
 #rm -rf edl/modem
-cp -r firmware/* ${DEBIAN_DIR}/lib/firmware
+cp -r devices/${1}/firmware/* ${DEBIAN_DIR}/lib/firmware
 
 # If needed, add WIFI connection
 #cp ../wifi.nmconnection ./${DEBIAN_DIR}/etc/NetworkManager/system-connections

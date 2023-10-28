@@ -1,6 +1,6 @@
 set -e
 
-DTB_FILE="./linux/arch/arm64/boot/dts/qcom/msm8916-thwc-ufi001c.dtb"
+DTB_FILE="./devices/${1}/*.dtb"
 #DTB_FILE="./dtb/*.dtb"
 KERNEL_FILE="./linux/arch/arm64/boot/Image.gz"
 
