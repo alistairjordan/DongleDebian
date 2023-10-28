@@ -1,7 +1,7 @@
 set -e
 
-# Install binfmt-support
-sudo apt install -y binfmt-support qemu-user-static
+# Install binfmt-support and zip
+sudo apt install -y binfmt-support qemu-user-static zip
 
 # Install docker
 # Add Docker's official GPG key:
