@@ -1,7 +1,7 @@
 # DongleDebian
 4G Wifi USB Modem Reverse Engineering / Debian Image.
 
-This project was inspired by OpenStick [https://github.com/OpenStick/OpenStick] a linux distribution made by HandsomeHacker. The Openstick Project only provides binaries for Linux running on the MSM8916 based 4G modem dongles, this project provides a system to produce images.from source.  
+This project was inspired by OpenStick [https://github.com/OpenStick/OpenStick] a linux distribution made by HandsomeHacker. The Openstick Project only provides binaries for Linux running on the MSM8916 based 4G modem dongles, this project provides a system to produce images from scratch.  
 
 # Notes
 * Build done using Docker / GitHub Actions
@@ -50,10 +50,22 @@ git submodule update --init --recursive
 
 ```
 # Create Backup of original android system
-edl rl android_dump --skip=userdata --genxml
+python3 edl rl android_dump --skip=userdata --genxml
 
 ```
 
 ## Deploy DongleLinux
 
 *Push RESET button on device & insert into USB drive to enable EDL mode*
+
+```
+# Unzip edl.zip within EDL directory
+unzip edl.zip
+
+# Copy over firmware and other bits from Android Dump
+
+
+# Deploy DongleLinux
+python3 edl wl edl
+
+```
