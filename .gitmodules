@@ -4,3 +4,6 @@
 [submodule "bootloader/lk2nd"]
 	path = bootloader/lk2nd
 	url = https://github.com/OpenStick/lk2nd
+[submodule "bootloader/qtestsign"]
+	path = bootloader/qtestsign
+	url = https://github.com/msm8916-mainline/qtestsign

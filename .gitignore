@@ -5,3 +5,4 @@ debian/*
 *.changes
 *.key
 *.zip
+bootloader/emmc_appsboot*
