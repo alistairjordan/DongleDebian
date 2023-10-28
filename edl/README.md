@@ -6,7 +6,8 @@ Much like the bootloader directory, this is a "done once" kinda thing, as all th
 
 # IMPORTANT
 *MAKE SURE YOU BACKUP BEFORE DEPLOYING.*
-THE GPT is guesswork based on my own device. 
+
+The GPT is guesswork based on my own device. 
 
 ## Deployment Process
 
