@@ -7,28 +7,16 @@ This project was inspired by OpenStick [https://github.com/OpenStick/OpenStick] 
 * Build done using Docker / GitHub Actions
 * Using predefined .config for linux kernel
 
-# Starting Steps
+# Starting Steps using GitHub Releases
 
-For running on a local machine, run the following in the terminal.
+For a quick start, the edl.zip directory can be used from the most recent release.
 
-```
-# Init Submodules (For the linux src)
-git submodule init
-git submodule update --depth=1
-# Add support to host kernel for binfmt
-sudo apt install binfmt-support qemu-user-static
-# Build/Run Docker Container (Which mounts checkout directory)
-./scripts/docker_brun.sh
-```
-
-The rootfs.img and boot.img will be created in the checkout directory.
-
-# Deployment
+## Deployment
 
 Deployment can be done through Qualcomm EDL. 
 [https://github.com/bkerler/edl]
 
-## EDL Installation
+### EDL Installation
 
 ```
 # Configure system
@@ -44,7 +32,7 @@ git submodule update --init --recursive
 
 ```
 
-## Backup Current Android System
+### Backup Current Android System
 
 *Push RESET button on device & insert into USB drive to enable EDL mode*
 
@@ -54,7 +42,7 @@ python3 edl rl android_dump --skip=userdata --genxml
 
 ```
 
-## Deploy DongleLinux
+### Deploy DongleLinux
 
 *Push RESET button on device & insert into USB drive to enable EDL mode*
 
@@ -69,3 +57,20 @@ unzip edl.zip
 python3 edl wl edl
 
 ```
+
+# Starting Steps for Building on a Local Machine
+
+For running on a local machine, run the following in the terminal.
+
+```
+# Init Submodules (For the linux src)
+git submodule init
+git submodule update --depth=1
+# Add support to host kernel for binfmt
+sudo apt install binfmt-support qemu-user-static
+# Build/Run Docker Container (Which mounts checkout directory)
+./scripts/docker_brun.sh
+```
+
+The rootfs.img and boot.img will be created in the checkout directory.
+
