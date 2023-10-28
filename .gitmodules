@@ -1,3 +1,6 @@
 [submodule "linux"]
 	path = linux
 	url = https://github.com/alistairjordan/msm8916-linux.git
+[submodule "bootloader/lk2nd"]
+	path = bootloader/lk2nd
+	url = https://github.com/OpenStick/lk2nd
