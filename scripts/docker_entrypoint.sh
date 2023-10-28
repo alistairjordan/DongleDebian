@@ -2,16 +2,10 @@ set -e
 
 case ${1} in
 	"clean")
-		./scripts/clean_linux.sh
-		./scripts/clean_debian.sh
-		./scripts/clean_rootfs.sh
-		./scripts/clean_boot.sh
+		./scripts/clean_all.sh
 		;;
 	"build")
-		./scripts/build_linux.sh
-		./scripts/create_debian.sh
-		./scripts/create_boot.sh
-		./scripts/create_edl.sh
+		./scripts/build_all.sh
 		;;
 	*)
 		echo "Select option 'build' or 'clean'"
