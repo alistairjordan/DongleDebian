@@ -7,7 +7,7 @@ LINUX_ARCH=$(cat linux/debian/linux-image/DEBIAN/control | grep "Architecture: "
 LINUX_DEB=$(echo "${LINUX_PACKAGE}_${LINUX_VERSION}_${LINUX_ARCH}.deb")
 
 #Install Debian base system using debootstrap
-debootstrap --arch=arm64 --keyring /usr/share/keyrings/debian-archive-keyring.gpg --variant=buildd --exclude=debfoster unstable ${DEBIAN_DIR} http://ftp.debian.org/debian
+debootstrap --arch=arm64 --keyring /usr/share/keyrings/debian-archive-keyring.gpg --variant=buildd --exclude=debfoster stable ${DEBIAN_DIR} http://ftp.debian.org/debian
 
 # Install qemu to run arm64 apt during build
 apt-get install -y qemu-user-static
