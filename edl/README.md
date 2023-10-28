@@ -12,3 +12,7 @@ The following steps are required into making this a full deployment:
 
 ## Contents
 * aboot.bin - bootloader built by the DongleDebian/bootloader process.
+
+
+## Notes
+Sector size is 512 Bytes.
