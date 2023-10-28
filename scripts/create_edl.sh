@@ -1,6 +1,6 @@
 set -e
 
-mv root.img edl/rootfs.bin
-mv boot.img edl/boot.bin
+cp root.img edl/rootfs.bin
+cp boot.img edl/boot.bin
 
 zip edl.zip edl/*
